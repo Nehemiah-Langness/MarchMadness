@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>March Madness</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            
+            <span class="h1 navbar-brand"><i class="fas fa-gem"></i> Win the things!</span>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br/>
+    <div class="container">
+          <div id="main-data">
+
+          </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var teams = [];
+
+            var register = function(team){
+                teams.push(team);
+            }
+
+            var random = function(max) {
+                return Math.random() * max;
+            }
+
+            var compare = function(team1, team2) {
+                team1.score = random(team1.rank);
+                team2.score = random(team2.rank);
+
+                if (team1.score < team2.score)
+                    return team1;
+                if (team1.score > team2.score)
+                    return team2;
+                
+                if (team1.rank < team2.rank)
+                    return team1;
+                if (team1.rank > team2.rank)
+                    return team2;
+                
+                return (random(100) < 50) ? team1 : team2;
+            }
+
+            var getTeamHtml = function(team){
+                return "<div class='col-5 col-md-3'><div class='row'><div class='col-12 col-sm-2'><img src='" + team.icon +"' alt='logo' class='team-logo'></div><div class='col-12 col-sm-10'>" + team.team + " <small> " + team.rank + "</small></div></div></div>";
+            };
+            var getWinnerHtml = function(team){
+                return "<div class='col-10 col-md-3'><img src='" + team.icon +"' alt='logo' class='team-logo'> " + team.team + " <small> " + team.rank + "</small></div>";
+            };
+
+            var checkMatch = function (team1, team2, matchSelector){
+                var winner = compare(team1, team2);
+                $("<li class='list-group-item'><div class='row'>" + 
+                        getTeamHtml(team1) +
+                        "<div class='col-2 col-md-1'>" + fa.new('bolt') + "</div>" + 
+                        getTeamHtml(team2) +  
+                        "<div class='col-1 col-md-2 text-right'>" + fa.new('trophy') + "</div>" + 
+                        getWinnerHtml(winner) +                      
+                    "</div></li>")
+                    .appendTo(matchSelector);
+                
+                return winner;
+            };
+
+            var startMatch = function(round){
+                var header = $("<div class='row' style='margin-bottom: 0.5em' id='round"+ round + "'></div>").appendTo(container);
+                $("<div class='col'><span class='h3'>Round " + round + "</span></div>").appendTo(header);
+                $("<div class='col-10 d-none d-md-block'><hr /></div>").appendTo(header);
+                $("ul.navbar-nav").append("<li class='nav-item'><a class='nav-link' href='#round"+ round + "'>Round "+ round + "</a></li>")
+                return $("<ul class='class=\"list-group\"'></ul>").appendTo(container);
+            }
+
+            var getMatchResults = function(teams, round) {
+                if (!round) round = 1;
+
+                if (teams.length === 1)
+                    return teams[0];
+
+                var match = startMatch(round);
+
+                var matchResults = [];
+
+                var team1;
+                for (var i = 0; i < teams.length; i++){
+                    if (i%2 == 0)
+                        team1 = teams[i];
+                    else {
+                        var team2 = teams[i];
+                        matchResults.push(checkMatch(team1, team2, match));
+                    }
+                }
+                return getMatchResults(matchResults, round + 1);
+            }
+
+            var container = $("#main-data");
+
+            $.ajax("data.json", {
+                success: function(data){
+                    var winningTeam = getMatchResults(data);
+                    container.prepend($("<div class='form-control'><b>Winner: </b><img src='" + winningTeam.icon +"' alt='logo' class='team-logo'> " + " " + winningTeam.team + "</div><br/>"))
+                }
+            })
+
+        });
+    </script>
+  </body>
+</html>
