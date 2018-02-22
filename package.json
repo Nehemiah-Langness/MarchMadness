@@ -1,0 +1,23 @@
+{
+  "name": "march-madness-bracket",
+  "version": "1.0.0",
+  "description": "RNG decision making for who wins the things",
+  "main": "script.js",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "http-server -o -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nehemiah-Langness/MarchMadness.git"
+  },
+  "author": "Nehemiah Langness",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nehemiah-Langness/MarchMadness/issues"
+  },
+  "homepage": "https://github.com/Nehemiah-Langness/MarchMadness#readme"
+}
