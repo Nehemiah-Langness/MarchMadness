@@ -38,10 +38,14 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous">
+        </script>
     <script src="script.js"></script>
 
     <script>
@@ -93,7 +97,7 @@
             };
 
             var startMatch = function(round, parent) {
-                $("ul.navbar-nav").append("<li class='nav-item'><a class='nav-link' href='#round"+ round + "'>Round "+ round + "</a></li>")
+                //$("ul.navbar-nav").append("<li class='nav-item'><a class='nav-link' href='#round"+ round + "'>Round "+ round + "</a></li>")
 
                 var header = $("<div class='row' style='margin-bottom: 0.5em' data-round='"+ round + "'></div>").appendTo(parent);
                 $("<div class='col'><span class='h3'>Round " + round + "</span></div>").appendTo(header);
@@ -129,41 +133,50 @@
                 return winner
             }
 
-            var findWinner = function(){
-                $('div[data-iteration]')
-                .each(function(x, element) {
+            var findWinner = function() {
+
+                var iterationResults = [];
+
+                $('div[data-iteration]').each(function(x, element) {
                     var roundResults = {};
 
-                    $("div[data-round]", $(element))
-                        .each(function(y, match) {
+                    $("div[data-round]", $(element)).each(function(y, match) {
                             var round = $(match).data("round");
 
-                            $("li.match", $(match))
-                                .each(function(z, result) {
+                            $("li.match", $(match)).each(function(z, result) {
                                     var winner = $(result).data("winner");
                                     var loser = $(result).data("loser");
 
                                     if (!roundResults[loser] || roundResults[loser] < round)
                                         roundResults[loser] = round;
 
-
                                     if (!roundResults[winner] || roundResults[winner] < round + 1)
                                         roundResults[winner] = round + 1;
                                     
-                                });
-                        });
-                    
-                        var max = 0;
-                        for(var team in roundResults){
-                            if (roundResults.hasOwnProperty(team))
-                                max = Math.max(max, roundResults[team]);
-                        }
-                        for(var team in roundResults){
-                            if (roundResults.hasOwnProperty(team))
-                                roundResults[team] = (max + 1) - roundResults[team];
-                        }
+                            });
+                    });
 
-                    console.log(roundResults);
+                    var rankings = [];
+                                        
+                    var max = 0;
+                    for(var team in roundResults){
+                        if (roundResults.hasOwnProperty(team))
+                            max = Math.max(max, roundResults[team]);
+                    }
+
+                    for(var team in roundResults){
+                        if (roundResults.hasOwnProperty(team)){
+                            var index = max - roundResults[team];
+
+                            if (!rankings[index])
+                                rankings[index] = [];
+                            
+                            rankings[index].push(team);
+                        }
+                    }
+
+                    iterationResults.push(rankings);
+                    console.log(rankings);
                 })
             }
 
