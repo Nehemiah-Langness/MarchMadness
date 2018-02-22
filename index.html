@@ -12,7 +12,7 @@
     <title>March Madness</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             
             <span class="h1 navbar-brand"><i class="fas fa-gem"></i> Win the things!</span>
@@ -25,8 +25,8 @@
             </div>
         </div>
     </nav>
-    <br/>
-    <div class="container">
+    <div class="navbar"><span class="h1 navbar-brand">&nbsp;</span></div>
+    <div class="container content">
           <div id="main-data">
 
           </div>
@@ -39,11 +39,7 @@
 
     <script>
         $(document).ready(function() {
-            var teams = [];
-
-            var register = function(team){
-                teams.push(team);
-            }
+            var iterations = 0;
 
             var random = function(max) {
                 return Math.random() * max;
@@ -75,7 +71,9 @@
 
             var checkMatch = function (team1, team2, matchSelector){
                 var winner = compare(team1, team2);
-                $("<li class='list-group-item'><div class='row'>" + 
+                var loser = (winner.team == team1.team) ? team2 : team1;
+
+                $("<li class='list-group-item match' data-winner='" + winner.team + "' data-loser='" + loser.team + "'><div class='row'>" + 
                         getTeamHtml(team1) +
                         "<div class='col-2 col-md-1'>" + fa.new('bolt') + "</div>" + 
                         getTeamHtml(team2) +  
@@ -87,21 +85,20 @@
                 return winner;
             };
 
-            var startMatch = function(round){
-                var header = $("<div class='row' style='margin-bottom: 0.5em' id='round"+ round + "'></div>").appendTo(container);
+            var startMatch = function(round, parent) {
+                $("ul.navbar-nav").append("<li class='nav-item'><a class='nav-link' href='#round"+ round + "'>Round "+ round + "</a></li>")
+
+                var header = $("<div class='row' style='margin-bottom: 0.5em' data-round='"+ round + "'></div>").appendTo(parent);
                 $("<div class='col'><span class='h3'>Round " + round + "</span></div>").appendTo(header);
                 $("<div class='col-10 d-none d-md-block'><hr /></div>").appendTo(header);
-                $("ul.navbar-nav").append("<li class='nav-item'><a class='nav-link' href='#round"+ round + "'>Round "+ round + "</a></li>")
-                return $("<ul class='class=\"list-group\"'></ul>").appendTo(container);
+                return $("<ul class='col-12 list-group'></ul>").appendTo(header);
             }
 
-            var getMatchResults = function(teams, round) {
-                if (!round) round = 1;
-
+            var getMatchResults = function(teams, round, parent) {
                 if (teams.length === 1)
                     return teams[0];
 
-                var match = startMatch(round);
+                var match = startMatch(round, parent);
 
                 var matchResults = [];
 
@@ -114,15 +111,67 @@
                         matchResults.push(checkMatch(team1, team2, match));
                     }
                 }
-                return getMatchResults(matchResults, round + 1);
+                return getMatchResults(matchResults, round + 1, parent);
+            }
+
+            var runIteration = function(data) {
+                iterations += 1;
+
+                var iteration = $("<div data-iteration='" + iterations + "'></div>").appendTo(container);
+                var winner = getMatchResults(data, 1, iteration);
+                return winner
+            }
+
+            var findWinner = function(){
+                $('div[data-iteration]')
+                .each(function(x, element) {
+                    var roundResults = {};
+
+                    $("div[data-round]", $(element))
+                        .each(function(y, match) {
+                            var round = $(match).data("round");
+
+                            $("li.match", $(match))
+                                .each(function(z, result) {
+                                    var winner = $(result).data("winner");
+                                    var loser = $(result).data("loser");
+
+                                    if (!roundResults[loser] || roundResults[loser] < round)
+                                        roundResults[loser] = round;
+
+
+                                    if (!roundResults[winner] || roundResults[winner] < round + 1)
+                                        roundResults[winner] = round + 1;
+                                    
+                                });
+                        });
+                    
+                        var max = 0;
+                        for(var team in roundResults){
+                            if (roundResults.hasOwnProperty(team))
+                                max = Math.max(max, roundResults[team]);
+                        }
+                        for(var team in roundResults){
+                            if (roundResults.hasOwnProperty(team))
+                                roundResults[team] = (max + 1) - roundResults[team];
+                        }
+
+                    console.log(roundResults);
+                })
             }
 
             var container = $("#main-data");
 
             $.ajax("data.json", {
                 success: function(data){
-                    var winningTeam = getMatchResults(data);
-                    container.prepend($("<div class='form-control'><b>Winner: </b><img src='" + winningTeam.icon +"' alt='logo' class='team-logo'> " + " " + winningTeam.team + "</div><br/>"))
+                    for (var i = 0; i < 5; i++){
+                        runIteration(data);
+                    }
+                    var winningTeam = runIteration(data);
+
+                    findWinner();
+
+                    container.prepend($("<div class='form-control match'><b>Winner: </b><img src='" + winningTeam.icon +"' alt='logo' class='team-logo'> " + " " + winningTeam.team + "</div><br/>"))
                 }
             })
 
