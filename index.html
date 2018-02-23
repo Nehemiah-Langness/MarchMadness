@@ -134,7 +134,6 @@
             }
 
             var findWinner = function() {
-
                 var iterationResults = [];
 
                 $('div[data-iteration]').each(function(x, element) {
@@ -157,12 +156,18 @@
                     });
 
                     var rankings = [];
-                                        
-                    var max = 0;
-                    for(var team in roundResults){
-                        if (roundResults.hasOwnProperty(team))
-                            max = Math.max(max, roundResults[team]);
-                    }
+                                       
+                    var teamRankings = Reflection(roundResults);
+                    var max = teamRankings.map(function (item){ return item.value}).max();
+
+                    // teamRankings.forEach(function (item){ 
+                    //     var team = item.value;
+                    //     var index = max - roundResults[team];
+                    //     if (!rankings[index])
+                    //         rankings[index] = [];
+                        
+                    //     rankings[index].push(team);
+                    // });
 
                     for(var team in roundResults){
                         if (roundResults.hasOwnProperty(team)){
