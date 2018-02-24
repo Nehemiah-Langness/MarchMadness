@@ -8,6 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start": "NODE_ENV=production http-server -o -c-1",
     "test": "http-server -o -c-1"
   },
   "repository": {
