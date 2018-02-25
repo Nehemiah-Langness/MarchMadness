@@ -29,9 +29,41 @@ var linq = (function () {
         });
     };
 
+    var selectMany = function(array, selectFunction) {
+        var list = [];
+        array.forEach(function (item) {
+            selectFunction(item).forEach(function (innerItem) {
+                list.push(innerItem);
+            });
+        });
+        return list;
+    }
+
+    var mode = function(array){
+        var items = {};
+        var modeItem = array[0];
+        var max = 1;
+        array.forEach(function (item){
+            if(items[item] == null)
+                items[item] = 1;
+            else
+                items[item]++;  
+
+            if(items[item] > max)
+            {
+                modeItem = item;
+                max = items[item];
+            }
+        });
+        
+        return modeItem;
+    }
+
     return {
         max: max,
-        min: min
+        min: min,
+        selectMany: selectMany,
+        mode: mode
     }
 }());
 
@@ -54,4 +86,12 @@ Array.prototype.max = function() {
 
 Array.prototype.min = function() {
     return linq.min(this);
+}; 
+
+Array.prototype.mode = function() {
+    return linq.mode(this);
+};
+
+Array.prototype.selectMany = function(selectFunction) {
+    return linq.selectMany(this, selectFunction);
 }; 
