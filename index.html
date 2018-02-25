@@ -32,8 +32,17 @@
     </nav>
     <div class="navbar"><span class="h1 navbar-brand">&nbsp;</span></div>
     <div class="container content">
-          <div id="main-data">
-
+        <div id="main-data">
+            <div id="temp" class="text-center">
+                <span class="h1">
+                    <i class="fas fa-spinner fa-spin"></i>
+                </span>
+                <br/>
+                <span class="h3">
+                    Running analysis
+                </span>
+            </div>
+            
         </div>
     </div>
 
@@ -73,7 +82,15 @@
                 success: function(data){
                     var matches = analysis.buildMatches(data);
 
-                    addRoundToPage(analysis.run(matches));
+                    var iterations = [];
+                    for (var i = 0; i< 100; i++)
+                        iterations.push(analysis.run(matches));
+
+                    var winner = analysis.condense(iterations);
+
+                    $("#temp").remove();
+                    addRoundToPage(winner);
+
                     $("[data-toggle='popover']", $("div.match")).popover();
                 }
             })
