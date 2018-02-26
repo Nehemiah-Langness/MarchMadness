@@ -20,6 +20,7 @@
 
             <span class="h1 navbar-brand">
                 <i class="fas fa-gem"></i> Win the things!</span>
+
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,6 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                 </ul>
+                <input class="form-control mr-sm-2" type="search" placeholder="Filter">
             </div>
         </div>
     </nav>
@@ -42,7 +44,6 @@
                     Running analysis
                 </span>
             </div>
-            
         </div>
     </div>
 
@@ -60,6 +61,21 @@
 
     <script>
         $(document).ready(function() {
+            $("input[type='search']").keyup(function (){
+                var filterValue = $(this).val().toLowerCase();
+                if (filterValue.length < 3) {
+                    $(".match").parent().show();
+                    return;
+                }
+                $(".match").each(function (index, match){
+                    var teams = $(match).data("teams");
+                    if (!teams.includes(filterValue))
+                        $(match).parent().hide();
+                    else
+                        $(match).parent().show();
+                });
+            });
+
             var container = $("#main-data");
 
             var addRoundToPage = function (iteration){
@@ -68,8 +84,11 @@
                 $(htmlHelper.winner(iteration.winner)).appendTo(iterationContainer);
 
                 iteration.rounds.forEach(function (round) {
-                    var roundContainer = $("<div class='row'><div class='col-12'>" + htmlHelper.roundHeader(round) +
-                        "</div></div>").appendTo(iterationContainer)
+                    $("ul.navbar-nav").append("<li class='nav-item'><a class='nav-link' href='#round-" + round.round + "'>Round " + (round.round + 1) +"</a></li>")
+
+                    var roundContainer = $("<div class='row' id='round-" + round.round + "'><div class='col-12'>" + 
+                                                htmlHelper.roundHeader(round) +
+                                                "</div></div>").appendTo(iterationContainer)
                     round.results.forEach(function(match){
                         $("<div class='col-12 col-md-4 col-xl-3'>" + 
                             htmlHelper.match(match) +  "</div>").appendTo(roundContainer);
@@ -83,7 +102,7 @@
                     var matches = analysis.buildMatches(data);
 
                     var iterations = [];
-                    for (var i = 0; i< 100; i++)
+                    for (var i = 0; i< 500; i++)
                         iterations.push(analysis.run(matches));
 
                     var winner = analysis.condense(iterations);
