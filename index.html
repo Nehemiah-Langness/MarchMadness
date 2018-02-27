@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>March Madness</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
 
@@ -32,7 +33,9 @@
             </div>
         </div>
     </nav>
-    <div class="navbar"><span class="h1 navbar-brand">&nbsp;</span></div>
+    <div class="navbar">
+        <span class="h1 navbar-brand">&nbsp;</span>
+    </div>
     <div class="container content">
         <div id="main-data">
             <div id="temp" class="text-center">
@@ -48,26 +51,29 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous">
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous">
-        </script>
+    </script>
     <script src="script.js"></script>
     <script src="resultAnalysis.js"></script>
 
     <script>
-        $(document).ready(function() {
-            $("input[type='search']").keyup(function (){
+        $(document).ready(function () {
+            $("input[type='search']").keyup(function (e) {
+                if (e.which == 13) {
+                    $('.navbar-collapse').collapse('hide');
+                    return;
+                }
+
                 var filterValue = $(this).val().toLowerCase();
                 if (filterValue.length < 3) {
                     $(".match").parent().show();
                     return;
                 }
-                $(".match").each(function (index, match){
+                $(".match").each(function (index, match) {
                     var teams = $(match).data("teams");
                     if (!teams.includes(filterValue))
                         $(match).parent().hide();
@@ -78,31 +84,34 @@
 
             var container = $("#main-data");
 
-            var addRoundToPage = function (iteration){
+            var addRoundToPage = function (iteration) {
                 var iterationContainer = $("<div class='iteration'></div>").appendTo(container);
 
                 $(htmlHelper.winner(iteration.winner)).appendTo(iterationContainer);
 
                 iteration.rounds.forEach(function (round) {
-                    $("ul.navbar-nav").append("<li class='nav-item'><a class='nav-link' href='#round-" + round.round + "'>Round " + (round.round + 1) +"</a></li>")
+                    $("ul.navbar-nav").append(
+                        "<li class='nav-item'><a class='nav-link' href='#round-" + round.round +
+                        "'>Round " + (round.round + 1) + "</a></li>")
 
-                    var roundContainer = $("<div class='row' id='round-" + round.round + "'><div class='col-12'>" + 
-                                                htmlHelper.roundHeader(round) +
-                                                "</div></div>").appendTo(iterationContainer)
-                    round.results.forEach(function(match){
-                        $("<div class='col-12 col-md-4 col-xl-3'>" + 
-                            htmlHelper.match(match) +  "</div>").appendTo(roundContainer);
-                        
+                    var roundContainer = $("<div class='row' id='round-" + round.round +
+                        "'><div class='col-12'>" +
+                        htmlHelper.roundHeader(round) +
+                        "</div></div>").appendTo(iterationContainer)
+                    round.results.forEach(function (match) {
+                        $("<div class='col-12 col-md-4 col-xl-3'>" +
+                            htmlHelper.match(match) + "</div>").appendTo(roundContainer);
+
                     });
                 });
             }
 
             $.ajax("data.json", {
-                success: function(data){
+                success: function (data) {
                     var matches = analysis.buildMatches(data);
 
                     var iterations = [];
-                    for (var i = 0; i< 500; i++)
+                    for (var i = 0; i < 500; i++)
                         iterations.push(analysis.run(matches));
 
                     var winner = analysis.condense(iterations);
