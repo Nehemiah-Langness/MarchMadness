@@ -143,148 +143,148 @@
         "color": "#872434"
     },
     {
-        "team": "Gonzaga",
+        "team": "Gonzaga University",
         "rank": 1,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/g/gonzaga.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Spokane, WA",
+        "nickname": "Bulldogs; Zags",
+        "conference": "West Coast Conference",
+        "color": "#003366"
     },
     {
-        "team": "South Dakota St",
+        "team": "South Dakota State University",
         "rank": 16,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/s/south-dakota-st.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Brookings, SD",
+        "nickname": "Jackrabbits",
+        "conference": "The Summit League",
+        "color": "#0039a6"
     },
     {
         "team": "Northwestern",
         "rank": 8,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/n/northwestern.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Evanston, IL",
+        "nickname": "Wildcats",
+        "conference": "Big Ten Conference",
+        "color": "#512698"
     },
     {
-        "team": "Vanderbilt",
+        "team": "Vanderbilt University",
         "rank": 9,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/v/vanderbilt.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Nashville, TN",
+        "nickname": "Commodores",
+        "conference": "Southeastern Conference",
+        "color": "#141414"
     },
     {
-        "team": "Notre Dame",
+        "team": "University of Notre Dame",
         "rank": 5,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/n/notre-dame.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Notre Dame, IN",
+        "nickname": "Fighting Irish",
+        "conference": "Atlantic Coast Conference",
+        "color": "#002b5c"
     },
     {
-        "team": "Princeton",
+        "team": "Princeton University",
         "rank": 12,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/p/princeton.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Princeton, NJ",
+        "nickname": "Tigers",
+        "conference": "The Ivy League",
+        "color": "#e87132"
     },
     {
-        "team": "West Virginia",
+        "team": "West Virginia University",
         "rank": 4,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/w/west-virginia.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Morgantown, WV",
+        "nickname": "Mountaineers",
+        "conference": "Big 12 Conference",
+        "color": "#00447c"
     },
     {
-        "team": "Bucknell",
+        "team": "Bucknell University",
         "rank": 13,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/b/bucknell.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Lewisburg, PA",
+        "nickname": "Bison",
+        "conference": "Patriot League",
+        "color": "#004c8b"
     },
     {
-        "team": "Maryland",
+        "team": "University of Maryland-College Park",
         "rank": 6,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/maryland.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "College Park, MD",
+        "nickname": "Terrapins, Terps",
+        "conference": "Big Ten Conference",
+        "color": "#e31836"
     },
     {
-        "team": "Xavier",
+        "team": "Xavier University",
         "rank": 11,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/x/xavier.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Cincinnati, OH",
+        "nickname": "Musketeers",
+        "conference": "Big East Conference",
+        "color": "#002857"
     },
     {
-        "team": "Florida State",
+        "team": "Florida State University",
         "rank": 3,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/f/florida-st.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Tallahassee, FL",
+        "nickname": "Seminoles",
+        "conference": "Atlantic Coast Conference",
+        "color": "#540115"
     },
     {
-        "team": "FGCU",
+        "team": "Florida Gulf Coast University",
         "rank": 14,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/f/fgcu.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Fort Myers, FL",
+        "nickname": "Eagles",
+        "conference": "Atlantic Sun Conference",
+        "color": "#00287A"
     },
     {
-        "team": "St Mary's (Cal)",
+        "team": "St. Mary's College (CA)",
         "rank": 7,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/s/st-marys-ca.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Moraga, CA",
+        "nickname": "Gaels",
+        "conference": "West Coast Conference",
+        "color": "#06315b"
     },
     {
-        "team": "VCU",
+        "team": "Virginia Commonwealth University",
         "rank": 10,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/v/vcu.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Richmond, VA",
+        "nickname": "Rams",
+        "conference": "Atlantic 10 Conference",
+        "color": "#141414"
     },
     {
-        "team": "Arizona",
+        "team": "University of Arizona",
         "rank": 2,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/a/arizona.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Tucson, AZ",
+        "nickname": "Wildcats",
+        "conference": "Pac-12 Conference",
+        "color": "#003366"
     },
     {
-        "team": "North Dakota",
+        "team": "University of North Dakota",
         "rank": 15,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/n/north-dakota.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Grand Forks, ND",
+        "nickname": "Fighting Hawks",
+        "conference": "Big Sky Conference",
+        "color": "#009A44"
     },
     {
         "team": "University of Kansas",
@@ -299,28 +299,28 @@
         "team": "UC Davis",
         "rank": 16,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/u/uc-davis.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Davis, CA",
+        "nickname": "Aggies",
+        "conference": "Big West Conference",
+        "color": "#002855"
     },
     {
-        "team": "Miami (Fla.)",
+        "team": "University of Miami",
         "rank": 8,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/miami-fl.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Coral Gables, FL",
+        "nickname": "Hurricanes",
+        "conference": "Atlantic Coast Conference",
+        "color": "#005030"
     },
     {
-        "team": "Mich. St.",
+        "team": "Michigan State University",
         "rank": 9,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/michigan-st.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "East Lansing, MI",
+        "nickname": "Spartans",
+        "conference": "Big Ten Conference",
+        "color": "#18453B"
     },
     {
         "team": "Iowa State",
