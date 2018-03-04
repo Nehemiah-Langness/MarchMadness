@@ -323,255 +323,255 @@
         "color": "#18453B"
     },
     {
-        "team": "Iowa State",
+        "team": "Iowa State University",
         "rank": 5,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/i/iowa-st.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Ames, IA",
+        "nickname": "Cyclones",
+        "conference": "Big 12 Conference",
+        "color": "#A71930"
     },
     {
-        "team": "Nevada",
+        "team": "University of Nevada",
         "rank": 12,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/n/nevada.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Reno, NV",
+        "nickname": "Wolf Pack",
+        "conference": "Mountain West Conference",
+        "color": "#003366"
     },
     {
-        "team": "Purdue",
+        "team": "Purdue University",
         "rank": 4,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/p/purdue.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "West Lafayette, IN",
+        "nickname": "Boilermakers",
+        "conference": "Big Ten Conference",
+        "color": "#141414"
     },
     {
         "team": "Vermont",
         "rank": 13,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/v/vermont.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Burlington, VT",
+        "nickname": "Catamounts",
+        "conference": "America East Conference",
+        "color": "#005030"
     },
     {
-        "team": "Creighton",
+        "team": "Creighton University",
         "rank": 6,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/c/creighton.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Omaha, NE",
+        "nickname": "Bluejays",
+        "conference": "Big East Conference",
+        "color": "#005CA9"
     },
     {
-        "team": "Rhode Island",
+        "team": "University of Rhode Island",
         "rank": 11,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/r/rhode-island.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Kingston, RI",
+        "nickname": "Rams",
+        "conference": "Atlantic 10 Conference",
+        "color": "#004990"
     },
     {
-        "team": "Oregon",
+        "team": "University of Oregon",
         "rank": 3,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/o/oregon.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Eugene, OR",
+        "nickname": "Ducks",
+        "conference": "Pac-12 Conference",
+        "color": "#004F27"
     },
     {
-        "team": "Iona",
+        "team": "Iona College",
         "rank": 14,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/i/iona.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "New Rochelle, NY",
+        "nickname": "Gaels",
+        "conference": "Metro Atlantic Athletic Conference",
+        "color": "#702e3d"
     },
     {
-        "team": "Michigan",
+        "team": "University of Michigan",
         "rank": 7,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/michigan.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Ann Arbor, MI",
+        "nickname": "Wolverines",
+        "conference": "Big Ten Conference",
+        "color": "#003976"
     },
     {
-        "team": "Oklahoma State",
+        "team": "Oklahoma State University",
         "rank": 10,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/o/oklahoma-st.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Stillwater, OK",
+        "nickname": "Cowboys",
+        "conference": "Big 12 Conference",
+        "color": "#FF6600"
     },
     {
-        "team": "Louisville",
+        "team": "University of Louisville",
         "rank": 2,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/l/louisville.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Louisville, KY",
+        "nickname": "Cardinals",
+        "conference": "Atlantic Coast Conference",
+        "color": "#AD0000"
     },
     {
-        "team": "Jacksonville St",
+        "team": "Jacksonville State University",
         "rank": 15,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/j/jacksonville-st.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Jacksonville, AL",
+        "nickname": "Gamecocks",
+        "conference": "Ohio Valley Conference",
+        "color": "#be0f34"
     },
     {
-        "team": "North Carolina",
+        "team": "University of North Carolina",
         "rank": 1,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/n/north-carolina.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Chapel Hill, NC",
+        "nickname": "Tar Heels",
+        "conference": "Atlantic Coast Conference",
+        "color": "#8db9e5"
     },
     {
-        "team": "Texas Southern",
+        "team": "Texas Southern University",
         "rank": 16,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/t/texas-southern.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Houston, TX",
+        "nickname": "Tigers",
+        "conference": "Southwestern Athletic...",
+        "color": "#70283e"
     },
     {
-        "team": "Arkansas",
+        "team": "University of Arkansas",
         "rank": 8,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/a/arkansas.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Fayetteville, AR",
+        "nickname": "Razorbacks",
+        "conference": "Southeastern Conference",
+        "color": "#BE0F34"
     },
     {
-        "team": "Seton Hall",
+        "team": "Seton Hall University",
         "rank": 15,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/s/seton-hall.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "South Orange, NJ",
+        "nickname": "Pirates",
+        "conference": "Big East Conference",
+        "color": "#004488"
     },
     {
-        "team": "Minnesota",
+        "team": "University of Minnesota",
         "rank": 5,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/minnesota.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Minneapolis, MN",
+        "nickname": "Golden Gophers",
+        "conference": "Big Ten Conference",
+        "color": "#872434"
     },
     {
-        "team": "Middle Tenn.",
+        "team": "Middle Tennessee State University",
         "rank": 12,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/middle-tenn.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Murfreesboro, TN",
+        "nickname": "Blue Raiders",
+        "conference": "Conference USA",
+        "color": "#0047aa"
     },
     {
-        "team": "Butler",
+        "team": "Butler University",
         "rank": 4,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/b/butler.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Indianapolis, IN",
+        "nickname": "Bulldogs",
+        "conference": "Big East Conference",
+        "color": "#00467f"
     },
     {
-        "team": "Winthrop",
+        "team": "Winthrop University",
         "rank": 13,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/w/winthrop.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Rock Hill, SC",
+        "nickname": "Eagles",
+        "conference": "Big South Conference",
+        "color": "#a90533"
     },
     {
-        "team": "Cincinnati",
+        "team": "University of Cincinnati",
         "rank": 6,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/c/cincinnati.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Cincinnati, OH",
+        "nickname": "Bearcats",
+        "conference": "American Athletic Conference",
+        "color": "#141414"
     },
     {
-        "team": "Kansas St.",
+        "team": "Kansas State University",
         "rank": 11,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/k/kansas-st.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Manhattan, KS",
+        "nickname": "Wildcats",
+        "conference": "Big 12 Conference",
+        "color": "#502d7f"
     },
     {
         "team": "UCLA",
         "rank": 3,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/u/ucla.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Los Angeles, CA",
+        "nickname": "Bruins",
+        "conference": "Pac-12 Conference",
+        "color": "#0072cf"
     },
     {
-        "team": "Kent State",
+        "team": "Kent State University",
         "rank": 14,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/k/kent-st.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Kent, OH",
+        "nickname": "Golden Flashes",
+        "conference": "Mid-American Conference",
+        "color": "#002664"
     },
     {
-        "team": "Dayton",
+        "team": "University of Dayton",
         "rank": 7,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/d/dayton.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Dayton, OH",
+        "nickname": "Flyers",
+        "conference": "Atlantic 10 Conference",
+        "color": "#002453"
     },
     {
-        "team": "Wichita State",
+        "team": "Wichita State University",
         "rank": 10,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/w/wichita-st.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Wichita, KS",
+        "nickname": "Shockers",
+        "conference": "American Athletic Conference",
+        "color": "#141414"
     },
     {
-        "team": "Kentucky",
+        "team": "University of Kentucky",
         "rank": 2,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/k/kentucky.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Lexington, KY",
+        "nickname": "Wildcats",
+        "conference": "Southeastern Conference",
+        "color": "#005DAA"
     },
     {
-        "team": "Northern Kentucky",
+        "team": "Northern Kentucky University",
         "rank": 15,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/n/northern-ky.70.png",
-        "location": "",
-        "nickname": "",
-        "conference": "",
-        "color": ""
+        "location": "Highland Heights, KY",
+        "nickname": "Norse",
+        "conference": "Horizon League",
+        "color": "#141414"
     }
 ]
