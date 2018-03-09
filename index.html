@@ -91,19 +91,14 @@
                 $(htmlHelper.winner(iteration.winner, iteration.chances[iteration.chances.length - 1])).appendTo(iterationContainer);              
 
                 iteration.rounds.forEach(function (round) {
-                    $("ul.navbar-nav").append(
-                        "<li class='nav-item'><a class='nav-link' href='#round-" + round.round +
-                        "'>Round " + (round.round + 1) + "</a></li>")
+                    var iterationHeader = $("<div>" + htmlHelper.roundHeader(round, iteration.chances[round.round]) +"</div>").appendTo(iterationContainer);
+                    var collapse = $("<div class='collapse' id='round-" + round.round +"-matches'></div>").appendTo(iterationHeader);
 
-                    var roundContainer = $("<div class='row' id='round-" + round.round +
-                        "'><div class='col-12'>" +
-                            htmlHelper.roundHeader(round, iteration.chances[round.round]) +
-                        "</div></div>").appendTo(iterationContainer)
+                    var roundContainer =  $("<div class='row'></div>")
+                        .appendTo(collapse);
 
                     round.results.forEach(function (match) {
-                        $("<div class='col-12 col-md-4 col-xl-3 collapse' data-id='round-" + round.round + "'>" +
-                            htmlHelper.match(match) + 
-                        "</div>").appendTo(roundContainer);                    
+                        $("<div class='col-12 col-md-4 col-xl-3'>" + htmlHelper.match(match) +  "</div>").appendTo(roundContainer);                    
                     });
                 });
             }
@@ -111,11 +106,7 @@
             $.ajax("teams.json", {
                 success: function (data) {
                     var matches = analysis.buildMatches(data);
-
-                    var iterations = [];
-                    for (var i = 0; i < 500; i++)
-                        iterations.push(analysis.run(matches));
-
+                    var iterations = analysis.run(750, matches);
                     var winner = analysis.condense(iterations);
 
                     $("#temp").remove();
