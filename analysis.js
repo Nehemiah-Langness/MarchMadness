@@ -4,8 +4,8 @@ var analysis = (function(){
     }
 
     var compare = function (team1, team2) {
-        team1.score = random(team1.rank);
-        team2.score = random(team2.rank);
+        team1.score = (random(team1.rank));
+        team2.score = (random(team2.rank));
 
         if (team1.score < team2.score)
             return team1;
@@ -82,12 +82,13 @@ var analysis = (function(){
         return iterations.selectMany(function(iteration) { return iteration.results[index]});
     }
 
-    var condense = function (iterations) {
+    var condense = function (iterations, modeLevel) {
         var filtered = iterations.map(function(item) { return item;});
-        var placing = 0;
         var totalPlaces = iterations[0].results.length
-        while (placing < totalPlaces){
-            var mode = getAllTeams(filtered, placing).mode();
+
+        var placing = totalPlaces - 1;
+        while (placing >= 0){
+            var mode = getAllTeams(filtered, placing).mode(modeLevel);
 
             var likelyhood = mode.occurances / filtered.length;
             for (var i = 0; i < filtered.length; i++){
@@ -104,7 +105,7 @@ var analysis = (function(){
                     filtered[i].chances[roundIndex] *= likelyhood;
                 }
             }
-            placing++;
+            placing--;
         }
         return filtered;
     }
@@ -112,17 +113,36 @@ var analysis = (function(){
     var condenseMultiple = function (iterations) {
         var maxAttempts = 50;
         var attempt = 0;
+        var modeLevel = 0;
         while (iterations.length > 1 && attempt < maxAttempts){
-            iterations = condense(iterations);
+            var prevLength = iterations.length;
+            iterations = condense(iterations, modeLevel);
+
+            if (iterations.length == prevLength) {
+                if (modeLevel + 1 < iterations[0].results.length)
+                    modeLevel++;
+                else
+                    break;
+            }
+                
             attempt++;
         }
         return iterations[0];
     }
 
+    var runMultiple = function(count, matches){
+        var iterations = [];
+        for (var i = 0; i < count; i++)
+            iterations.push(analyze(matches));
+
+        return iterations;
+    }
+
     return {
-        run:analyze,
+        runOnce: analyze,
         buildMatches: splitIntoMatches,
         average: getAllTeams,
-        condense: condenseMultiple
+        condense: condenseMultiple,
+        run: runMultiple
     }
 }());

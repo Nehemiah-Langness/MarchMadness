@@ -8,7 +8,7 @@ var htmlHelper = (function(){
     }
 
     var renderHeader = function (round, likelyhood){
-        return "<a href='#' onclick='return false;' class='text-dark'><span class='h3' data-toggle='collapse' data-target='[data-id=\"round-" + round.round + "\"]'>" + fa.new("angle-double-down") + " Round "+ (round.round + 1) + " - " + (likelyhood ? (Math.round(likelyhood * 100)) + "% Occurance" : "") +"</span></a><hr/>";
+        return "<a href='#' onclick='return false;' class='text-dark'><span class='h3' data-toggle='collapse' data-target='#round-" + round.round + "-matches'>" + fa.new("angle-double-down") + " Round "+ (round.round + 1) + " - " + (likelyhood ? (Math.round(likelyhood * 100)) + "% Occurance" : "") +"</span></a><hr/>";
     }
 
     var renderPopover = function(team){
@@ -61,7 +61,6 @@ var htmlHelper = (function(){
     var renderWinner = function(team, likelyhood) {
         return "<div class='text-center'>"+
                     "<div class='winner' style='"+ (team.color ? "background-color:" + team.color + "; color: #fff;" : "") +"'>"+
-                        
                         "<span class='h2'>" + fa.new("trophy") + " <img src='" + team.icon +"' alt='logo' class='team-logo'> " + 
                             (Math.round(likelyhood * 100)) + "% <br/>" + 
                         

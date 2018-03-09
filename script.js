@@ -39,7 +39,7 @@ var linq = (function () {
         return list;
     }
 
-    var mode = function (array) {
+    var mode = function (array, order) {
         var items = {};
         var modeItem = array[0];
         var max = 1;
@@ -54,6 +54,17 @@ var linq = (function () {
                 max = items[item];
             }
         });
+
+        if (order && order !== 0){
+            var keys = Object.keys(items)
+            var item = keys.map(function (prop){ return { item: prop, count: items[prop] }}).sort(function(pair){return pair.count}).reverse()[Math.min(keys.length - 1, order)];
+
+            return {
+                item: item.item,
+                count: array.length,
+                occurances: item.count
+            };
+        }
 
         return {
             item: modeItem,
@@ -78,8 +89,8 @@ Array.prototype.min = function () {
     return linq.min(this);
 };
 
-Array.prototype.mode = function () {
-    return linq.mode(this);
+Array.prototype.mode = function (order) {
+    return linq.mode(this, order);
 };
 
 Array.prototype.selectMany = function (selectFunction) {
