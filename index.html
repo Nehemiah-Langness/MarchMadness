@@ -58,7 +58,7 @@
             <div class="form-group">
                 <label for="min-overall">Overall Minimum Chance</label>
                 <div class="input-group">
-                    <input id="min-overall" type="text" class="form-control" value="0.07" placeholder="%">
+                    <input id="min-overall" type="text" class="form-control" value="0.037" placeholder="%">
                     <div class="input-group-append">
                         <span class="input-group-text" id="basic-addon2">%</span>
                     </div>
@@ -68,7 +68,7 @@
             <div class="form-group">
                 <label for="min-round">Round Minimum Chance</label>
                 <div class="input-group">
-                    <input id="min-round" type="text" class="form-control" value="25" placeholder="%">
+                    <input id="min-round" type="text" class="form-control" value="15" placeholder="%">
                     <div class="input-group-append">
                         <span class="input-group-text" id="basic-addon2">%</span>
                     </div>
@@ -77,7 +77,7 @@
             <div class="form-group">
                 <label for="iterations">Total Iterations</label>
                 <div class="input-group">
-                    <input id="iterations" type="text" class="form-control" value="3000" placeholder="">
+                    <input id="iterations" type="text" class="form-control" value="6000" placeholder="">
                     <div class="input-group-append">
                         <span class="input-group-text" id="basic-addon2">rounds</span>
                     </div>
@@ -156,7 +156,7 @@
 
                                     iterations = analysis.run(iterationCount, matchData);
                                     var test = analysis.condense(iterations);
-                                    if (test.roundMin > mostLikely.roundMin && test.overallChance < mostLikely.overallChance)
+                                    if (test.roundMin > mostLikely.roundMin && test.overallChance > mostLikely.overallChance)
                                         mostLikely = test;
                                     tries++;                                    
                                 }
