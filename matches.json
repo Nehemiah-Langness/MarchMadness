@@ -1,17 +1,141 @@
 {
+    "rankings":[
+        1, 16, 8, 9, 5, 12, 4, 13, 6, 11, 3, 14, 7, 10, 2, 15
+    ],
     "q1": [
         {
-            "team1": "",
-            "team2": ""
+            "team1": "University of Virginia",
+            "team2": "UMBC"
+        },
+        {
+            "team1": "Creighton University",
+            "team2": "Kansas State University"
+        },
+        {
+            "team1": "University of Kentucky",
+            "team2": "Davidson College"
+        },
+        {
+            "team1": "University of Arizona",
+            "team2": "University at Buffalo"
+        },
+        {
+            "team1": "University of Miami",
+            "team2": "Loyola University Chicago"
+        },
+        {
+            "team1": "University of Tennessee",
+            "team2": "Wright State University"
+        },
+        {
+            "team1": "University of Nevada",
+            "team2": "University of Texas"
+        },
+        {
+            "team1": "University of Cincinnati",
+            "team2": "Georgia State University"
         }
     ],
-    "q2": [
-
+    "q2": [        
+        {
+            "team1": "Villanova University",
+            "team2": "Radford University"
+        },
+        {
+            "team1": "Virginia Tech",
+            "team2": "University of Alabama"
+        },
+        {
+            "team1": "West Virginia University",
+            "team2": "Murray State University"
+        },
+        {
+            "team1": "Wichita State University",
+            "team2": "Marshall University"
+        },
+        {
+            "team1": "University of Florida",
+            "team2": "St. Bonaventure University"
+        },
+        {
+            "team1": "Texas Tech University",
+            "team2": "Stephen F. Austin State University"
+        },
+        {
+            "team1": "University of Arkansas",
+            "team2": "Butler University"
+        },
+        {
+            "team1": "Purdue University",
+            "team2": "Cal State-Fullerton"
+        }
     ],
     "q3": [
-
+        {
+            "team1": "Xavier University",
+            "team2": "Tennessee State University"
+        },
+        {
+            "team1": "University of Missouri",
+            "team2": "Florida State University"
+        },
+        {
+            "team1": "The Ohio State University",
+            "team2": "South Dakota State University"
+        },
+        {
+            "team1": "Gonzaga University",
+            "team2": "UNC Greensboro"
+        },
+        {
+            "team1": "University of Houston",
+            "team2": "San Diego State University"
+        },
+        {
+            "team1": "University of Michigan",
+            "team2": "University of Montana"
+        },
+        {
+            "team1": "Texas A&M University",
+            "team2": "Providence College"
+        },
+        {
+            "team1": "University of North Carolina",
+            "team2": "Lipscomb University"
+        }
     ],
     "q4": [
-
+        {
+            "team1": "University of Kansas",
+            "team2": "University of Pennsylvania"
+        },
+        {
+            "team1": "Seton Hall University",
+            "team2": "North Carolina State University"
+        },
+        {
+            "team1": "Clemson University",
+            "team2": "New Mexico State University"
+        },
+        {
+            "team1": "Auburn University",
+            "team2": "College of Charleston"
+        },
+        {
+            "team1": "Texas Christian University",
+            "team2": "Arizona State University"
+        },
+        {
+            "team1": "Michigan State University",
+            "team2": "Bucknell University"
+        },
+        {
+            "team1": "University of Rhode Island",
+            "team2": "University of Oklahoma"
+        },
+        {
+            "team1": "Duke University",
+            "team2": "Iona College"
+        }
     ]
 }

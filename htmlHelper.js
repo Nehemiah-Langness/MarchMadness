@@ -1,4 +1,16 @@
-var htmlHelper = (function(){
+var htmlHelper = (function() {
+    var runningLikelyhood;
+
+    var getTeam = function (teams, matchTeam){
+        var match = teams.find(function (team) { return team.team == matchTeam.team; });
+
+        if (!match) 
+            return matchTeam
+        
+        match.rank = matchTeam.rank;
+        return match;
+    }
+
     var image = function (team) {
         return "<img src='" + team.icon + "' alt='logo' class='team-logo'>"
     }
@@ -8,7 +20,13 @@ var htmlHelper = (function(){
     }
 
     var renderHeader = function (round, likelyhood){
-        return "<a href='#' onclick='return false;' class='text-dark'><span class='h3' data-toggle='collapse' data-target='#round-" + round.round + "-matches'>" + fa.new("angle-double-down") + " Round "+ (round.round + 1) + " - " + (likelyhood ? (Math.round(likelyhood * 100)) + "% Occurance" : "") +"</span></a><hr/>";
+        if (likelyhood)
+            runningLikelyhood *= likelyhood;
+
+        return "<a href='#' onclick='return false;' class='text-dark'><span class='h3' data-toggle='collapse' data-target='#round-" + round.round + "-matches'>" + fa.new("angle-double-down") + " Round "+ (round.round + 1) + 
+            (likelyhood ? " - " + Math.round(likelyhood * 100) + "% Occurance " : "") +
+            (round.round > 0 ? " <small>(" + (Math.round(runningLikelyhood * 10000))/100 + "%)</small>" : "") +
+            "</span></a><hr/>";
     }
 
     var renderPopover = function(team){
@@ -31,6 +49,7 @@ var htmlHelper = (function(){
                         "<div class='team'>"+
                             image(team) + 
                             " " + (team.nickname ? renderText(team.nickname) : renderText(team.team)) +
+                            " <small>" + team.rank + "</small>" + 
                         "</div>" +
                     "</div>"+
                     (winner.team == team.team ?
@@ -41,9 +60,9 @@ var htmlHelper = (function(){
                 "</div>";
     };
 
-    var match = function (matchResults){
-        var team1 = matchResults.team1;
-        var team2 = matchResults.team2;
+    var match = function (matchResults, teamData){
+        var team1 = getTeam(teamData, matchResults.team1);
+        var team2 = getTeam(teamData, matchResults.team2);
 
         var team1Display = (team1.nickname ? team1.nickname : team1.team);
         var team2Display = (team2.nickname ? team2.nickname : team2.team);
@@ -62,7 +81,7 @@ var htmlHelper = (function(){
         return "<div class='text-center'>"+
                     "<div class='winner' style='"+ (team.color ? "background-color:" + team.color + "; color: #fff;" : "") +"'>"+
                         "<span class='h2'>" + fa.new("trophy") + " <img src='" + team.icon +"' alt='logo' class='team-logo'> " + 
-                            (Math.round(likelyhood * 100)) + "% <br/>" + 
+                            "" + (Math.round(runningLikelyhood * 1000000)/10000) + "%</small><br/>" + 
                         
                             renderText(team.team) + "<br/>" + 
                             renderText(team.nickname) + 
@@ -71,10 +90,35 @@ var htmlHelper = (function(){
                 "</div>";
     }
 
+    var renderIteration = function (iteration, container, teamData) {
+        var iterationContainer = $("<div class='iteration'></div>").appendTo(container);
+        runningLikelyhood = 1;
+                      
+        iteration.rounds.forEach(function (round) {
+            renderRound(round, iterationContainer, iteration.chances, teamData)
+        });
+
+        $(renderWinner(getTeam(teamData, iteration.winner), iteration.chances[iteration.chances.length - 2])).prependTo(iterationContainer);
+    }
+
+    var renderRound = function (round, container, chances, teamData) {
+        
+        var iterationHeader = $("<div>" + renderHeader(round, chances[round.round]) +"</div>").appendTo(container);
+        var collapse = $("<div class='collapse' id='round-" + round.round +"-matches'></div>").appendTo(iterationHeader);
+
+        var roundContainer =  $("<div class='row'></div>")
+            .appendTo(collapse);
+
+        round.results.forEach(function (matchResults) {
+            $("<div class='col-12 col-md-4 col-xl-3'>" + match(matchResults, teamData) +  "</div>").appendTo(roundContainer);                    
+        }); 
+    }
+
     return {
         logo: image,
         roundHeader: renderHeader,
         match: match,
-        winner: renderWinner
+        winner: renderWinner,
+        render: renderIteration
     }
 }());

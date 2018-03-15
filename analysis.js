@@ -1,4 +1,5 @@
 var analysis = (function(){
+    
     var random = function (max) {
         return Math.random() * max;
     }
@@ -41,7 +42,31 @@ var analysis = (function(){
         return matches;
     }
 
-    var analyze = function(matches) {
+    function addRankingInformation(matchData, matches) {
+        var list = [];
+        var rankIndex = 0;
+        for (var index = 0; index < matches.length; index++){
+            list.push({
+                team: matches[index].team1,
+                rank: matchData.rankings[rankIndex++]
+            });
+
+            list.push({
+                team: matches[index].team2,
+                rank: matchData.rankings[rankIndex++]
+            });
+        }
+        return list;
+    }
+
+    var analyze = function(matchData) {
+        var matches = splitIntoMatches(
+                    addRankingInformation(matchData, matchData.q1)
+            .concat(addRankingInformation(matchData, matchData.q3))
+            .concat(addRankingInformation(matchData, matchData.q2))
+            .concat(addRankingInformation(matchData, matchData.q4))
+        );
+
         var rounds = [];
         rounds.push({round: rounds.length, results: matches});
         while (matches.length > 1){
@@ -87,9 +112,9 @@ var analysis = (function(){
         var totalPlaces = iterations[0].results.length
 
         var placing = totalPlaces - 1;
+        
         while (placing >= 0){
             var mode = getAllTeams(filtered, placing).mode(modeLevel);
-
             var likelyhood = mode.occurances / filtered.length;
             for (var i = 0; i < filtered.length; i++){
                 if (!filtered[i].results[placing].includes(mode.item)){
@@ -127,7 +152,10 @@ var analysis = (function(){
                 
             attempt++;
         }
-        return iterations[0];
+        var best = iterations[0];
+        best.roundMin = best.chances.min();
+        best.overallChance = best.chances.slice(0, -1).reduce(function (current, next) { return current*next}, 1);
+        return best;
     }
 
     var runMultiple = function(count, matches){

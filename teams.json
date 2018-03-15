@@ -1,6 +1,5 @@
 [{
         "team": "Villanova University",
-        "rank": 1,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/v/villanova.70.png",
         "location": "Villanova, PA",
         "nickname": "Wildcats",
@@ -9,7 +8,6 @@
     },
     {
         "team": "Mount St. Mary's University",
-        "rank": 16,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/mt-st-marys.70.png",
         "location": "Emmitsburg, MD",
         "nickname": "Mountaineers",
@@ -18,7 +16,6 @@
     },
     {
         "team": "University of Wisconsin, Madison",
-        "rank": 8,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/w/wisconsin.70.png",
         "location": "Madison, WI",
         "nickname": "Badgers",
@@ -27,7 +24,6 @@
     },
     {
         "team": "Virginia Tech",
-        "rank": 9,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/v/virginia-tech.70.png",
         "location": "Blacksburg, VA",
         "nickname": "Hokies",
@@ -36,7 +32,6 @@
     },
     {
         "team": "University of Virginia",
-        "rank": 5,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/v/virginia.70.png",
         "location": "Charlottesville, VA",
         "nickname": "Cavaliers",
@@ -45,7 +40,6 @@
     },
     {
         "team": "UNC Wilmington",
-        "rank": 12,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/u/unc-wilmington.70.png",
         "location": "Wilmington, NC",
         "nickname": "Seahawks",
@@ -54,7 +48,6 @@
     },
     {
         "team": "University of Florida",
-        "rank": 4,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/f/florida.70.png",
         "location": "Gainesville, FL",
         "nickname": "Gators",
@@ -63,7 +56,6 @@
     },
     {
         "team": "East Tennessee State University",
-        "rank": 13,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/e/east-tenn-st.70.png",
         "location": "Johnson City, TN",
         "nickname": "Buccaneers",
@@ -72,7 +64,6 @@
     },
     {
         "team": "Southern Methodist University",
-        "rank": 6,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/s/smu.70.png",
         "location": "Dallas, TX",
         "nickname": "Mustangs",
@@ -81,7 +72,6 @@
     },
     {
         "team": "University of Southern California",
-        "rank": 11,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/s/southern-california.70.png",
         "location": "Los Angeles, CA",
         "nickname": "Trojans",
@@ -90,7 +80,6 @@
     },
     {
         "team": "Baylor University",
-        "rank": 3,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/b/baylor.70.png",
         "location": "Waco, TX",
         "nickname": "Bears",
@@ -99,7 +88,6 @@
     },
     {
         "team": "New Mexico State University",
-        "rank": 14,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/n/new-mexico-st.70.png",
         "location": "Las Cruces, NM",
         "nickname": "Aggies",
@@ -108,7 +96,6 @@
     },
     {
         "team": "University of South Carolina",
-        "rank": 7,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/s/south-carolina.70.png",
         "location": "Columbia, SC",
         "nickname": "Gamecocks",
@@ -117,7 +104,6 @@
     },
     {
         "team": "Marquette University",
-        "rank": 10,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/marquette.70.png",
         "location": "Milwaukee, WI",
         "nickname": "Golden Eagles",
@@ -126,7 +112,6 @@
     },
     {
         "team": "Duke University",
-        "rank": 2,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/d/duke.70.png",
         "location": "Durham, NC",
         "nickname": "Blue Devils",
@@ -135,7 +120,6 @@
     },
     {
         "team": "Troy University",
-        "rank": 15,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/t/troy.70.png",
         "location": "Troy, AL",
         "nickname": "Trojans",
@@ -144,7 +128,6 @@
     },
     {
         "team": "Gonzaga University",
-        "rank": 1,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/g/gonzaga.70.png",
         "location": "Spokane, WA",
         "nickname": "Bulldogs, Zags",
@@ -153,7 +136,6 @@
     },
     {
         "team": "South Dakota State University",
-        "rank": 16,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/s/south-dakota-st.70.png",
         "location": "Brookings, SD",
         "nickname": "Jackrabbits",
@@ -162,7 +144,6 @@
     },
     {
         "team": "Northwestern",
-        "rank": 8,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/n/northwestern.70.png",
         "location": "Evanston, IL",
         "nickname": "Wildcats",
@@ -171,7 +152,6 @@
     },
     {
         "team": "Vanderbilt University",
-        "rank": 9,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/v/vanderbilt.70.png",
         "location": "Nashville, TN",
         "nickname": "Commodores",
@@ -180,7 +160,6 @@
     },
     {
         "team": "University of Notre Dame",
-        "rank": 5,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/n/notre-dame.70.png",
         "location": "Notre Dame, IN",
         "nickname": "Fighting Irish",
@@ -189,7 +168,6 @@
     },
     {
         "team": "Princeton University",
-        "rank": 12,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/p/princeton.70.png",
         "location": "Princeton, NJ",
         "nickname": "Tigers",
@@ -198,7 +176,6 @@
     },
     {
         "team": "West Virginia University",
-        "rank": 4,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/w/west-virginia.70.png",
         "location": "Morgantown, WV",
         "nickname": "Mountaineers",
@@ -207,7 +184,6 @@
     },
     {
         "team": "Bucknell University",
-        "rank": 13,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/b/bucknell.70.png",
         "location": "Lewisburg, PA",
         "nickname": "Bison",
@@ -216,7 +192,6 @@
     },
     {
         "team": "University of Maryland-College Park",
-        "rank": 6,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/maryland.70.png",
         "location": "College Park, MD",
         "nickname": "Terrapins, Terps",
@@ -225,7 +200,6 @@
     },
     {
         "team": "Xavier University",
-        "rank": 11,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/x/xavier.70.png",
         "location": "Cincinnati, OH",
         "nickname": "Musketeers",
@@ -234,7 +208,6 @@
     },
     {
         "team": "Florida State University",
-        "rank": 3,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/f/florida-st.70.png",
         "location": "Tallahassee, FL",
         "nickname": "Seminoles",
@@ -243,7 +216,6 @@
     },
     {
         "team": "Florida Gulf Coast University",
-        "rank": 14,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/f/fgcu.70.png",
         "location": "Fort Myers, FL",
         "nickname": "Eagles",
@@ -252,7 +224,6 @@
     },
     {
         "team": "St. Mary's College (CA)",
-        "rank": 7,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/s/st-marys-ca.70.png",
         "location": "Moraga, CA",
         "nickname": "Gaels",
@@ -261,7 +232,6 @@
     },
     {
         "team": "Virginia Commonwealth University",
-        "rank": 10,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/v/vcu.70.png",
         "location": "Richmond, VA",
         "nickname": "Rams",
@@ -270,7 +240,6 @@
     },
     {
         "team": "University of Arizona",
-        "rank": 2,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/a/arizona.70.png",
         "location": "Tucson, AZ",
         "nickname": "Wildcats",
@@ -279,7 +248,6 @@
     },
     {
         "team": "University of North Dakota",
-        "rank": 15,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/n/north-dakota.70.png",
         "location": "Grand Forks, ND",
         "nickname": "Fighting Hawks",
@@ -288,7 +256,6 @@
     },
     {
         "team": "University of Kansas",
-        "rank": 1,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/k/kansas.70.png",
         "location": "Lawrence, KS",
         "nickname": "Jayhawks",
@@ -297,7 +264,6 @@
     },
     {
         "team": "UC Davis",
-        "rank": 16,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/u/uc-davis.70.png",
         "location": "Davis, CA",
         "nickname": "Aggies",
@@ -306,7 +272,6 @@
     },
     {
         "team": "University of Miami",
-        "rank": 8,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/miami-fl.70.png",
         "location": "Coral Gables, FL",
         "nickname": "Hurricanes",
@@ -315,7 +280,6 @@
     },
     {
         "team": "Michigan State University",
-        "rank": 9,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/michigan-st.70.png",
         "location": "East Lansing, MI",
         "nickname": "Spartans",
@@ -324,7 +288,6 @@
     },
     {
         "team": "Iowa State University",
-        "rank": 5,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/i/iowa-st.70.png",
         "location": "Ames, IA",
         "nickname": "Cyclones",
@@ -333,7 +296,6 @@
     },
     {
         "team": "University of Nevada",
-        "rank": 12,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/n/nevada.70.png",
         "location": "Reno, NV",
         "nickname": "Wolf Pack",
@@ -342,7 +304,6 @@
     },
     {
         "team": "Purdue University",
-        "rank": 4,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/p/purdue.70.png",
         "location": "West Lafayette, IN",
         "nickname": "Boilermakers",
@@ -351,7 +312,6 @@
     },
     {
         "team": "Vermont",
-        "rank": 13,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/v/vermont.70.png",
         "location": "Burlington, VT",
         "nickname": "Catamounts",
@@ -360,7 +320,6 @@
     },
     {
         "team": "Creighton University",
-        "rank": 6,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/c/creighton.70.png",
         "location": "Omaha, NE",
         "nickname": "Bluejays",
@@ -369,7 +328,6 @@
     },
     {
         "team": "University of Rhode Island",
-        "rank": 11,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/r/rhode-island.70.png",
         "location": "Kingston, RI",
         "nickname": "Rams",
@@ -378,7 +336,6 @@
     },
     {
         "team": "University of Oregon",
-        "rank": 3,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/o/oregon.70.png",
         "location": "Eugene, OR",
         "nickname": "Ducks",
@@ -387,7 +344,6 @@
     },
     {
         "team": "Iona College",
-        "rank": 14,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/i/iona.70.png",
         "location": "New Rochelle, NY",
         "nickname": "Gaels",
@@ -396,7 +352,6 @@
     },
     {
         "team": "University of Michigan",
-        "rank": 7,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/michigan.70.png",
         "location": "Ann Arbor, MI",
         "nickname": "Wolverines",
@@ -405,7 +360,6 @@
     },
     {
         "team": "Oklahoma State University",
-        "rank": 10,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/o/oklahoma-st.70.png",
         "location": "Stillwater, OK",
         "nickname": "Cowboys",
@@ -414,8 +368,7 @@
     },
     {
         "team": "University of Louisville",
-        "rank": 2,
-        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/l/louisville.70.png",
+         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/l/louisville.70.png",
         "location": "Louisville, KY",
         "nickname": "Cardinals",
         "conference": "Atlantic Coast Conference",
@@ -423,7 +376,6 @@
     },
     {
         "team": "Jacksonville State University",
-        "rank": 15,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/j/jacksonville-st.70.png",
         "location": "Jacksonville, AL",
         "nickname": "Gamecocks",
@@ -432,7 +384,6 @@
     },
     {
         "team": "University of North Carolina",
-        "rank": 1,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/n/north-carolina.70.png",
         "location": "Chapel Hill, NC",
         "nickname": "Tar Heels",
@@ -441,7 +392,6 @@
     },
     {
         "team": "Texas Southern University",
-        "rank": 16,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/t/texas-southern.70.png",
         "location": "Houston, TX",
         "nickname": "Tigers",
@@ -450,7 +400,6 @@
     },
     {
         "team": "University of Arkansas",
-        "rank": 8,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/a/arkansas.70.png",
         "location": "Fayetteville, AR",
         "nickname": "Razorbacks",
@@ -459,7 +408,6 @@
     },
     {
         "team": "Seton Hall University",
-        "rank": 15,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/s/seton-hall.70.png",
         "location": "South Orange, NJ",
         "nickname": "Pirates",
@@ -468,7 +416,6 @@
     },
     {
         "team": "University of Minnesota",
-        "rank": 5,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/minnesota.70.png",
         "location": "Minneapolis, MN",
         "nickname": "Golden Gophers",
@@ -477,7 +424,6 @@
     },
     {
         "team": "Middle Tennessee State University",
-        "rank": 12,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/middle-tenn.70.png",
         "location": "Murfreesboro, TN",
         "nickname": "Blue Raiders",
@@ -486,7 +432,6 @@
     },
     {
         "team": "Butler University",
-        "rank": 4,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/b/butler.70.png",
         "location": "Indianapolis, IN",
         "nickname": "Bulldogs",
@@ -495,7 +440,6 @@
     },
     {
         "team": "Winthrop University",
-        "rank": 13,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/w/winthrop.70.png",
         "location": "Rock Hill, SC",
         "nickname": "Eagles",
@@ -504,7 +448,6 @@
     },
     {
         "team": "University of Cincinnati",
-        "rank": 6,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/c/cincinnati.70.png",
         "location": "Cincinnati, OH",
         "nickname": "Bearcats",
@@ -513,7 +456,6 @@
     },
     {
         "team": "Kansas State University",
-        "rank": 11,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/k/kansas-st.70.png",
         "location": "Manhattan, KS",
         "nickname": "Wildcats",
@@ -522,7 +464,6 @@
     },
     {
         "team": "UCLA",
-        "rank": 3,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/u/ucla.70.png",
         "location": "Los Angeles, CA",
         "nickname": "Bruins",
@@ -531,7 +472,6 @@
     },
     {
         "team": "Kent State University",
-        "rank": 14,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/k/kent-st.70.png",
         "location": "Kent, OH",
         "nickname": "Golden Flashes",
@@ -540,7 +480,6 @@
     },
     {
         "team": "University of Dayton",
-        "rank": 7,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/d/dayton.70.png",
         "location": "Dayton, OH",
         "nickname": "Flyers",
@@ -549,7 +488,6 @@
     },
     {
         "team": "Wichita State University",
-        "rank": 10,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/w/wichita-st.70.png",
         "location": "Wichita, KS",
         "nickname": "Shockers",
@@ -558,7 +496,6 @@
     },
     {
         "team": "University of Kentucky",
-        "rank": 2,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/k/kentucky.70.png",
         "location": "Lexington, KY",
         "nickname": "Wildcats",
@@ -567,11 +504,282 @@
     },
     {
         "team": "Northern Kentucky University",
-        "rank": 15,
         "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/n/northern-ky.70.png",
         "location": "Highland Heights, KY",
         "nickname": "Norse",
         "conference": "Horizon League",
         "color": "#141414"
+    },
+    {
+        "team": "UMBC",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/u/umbc.70.png",
+        "location": "Baltimore, MD",
+        "nickname": "Retrievers",
+        "conference": "America East Conference",
+        "color": "#bc9300"
+    },
+    {
+        "team": "Davidson College",
+        "icon": "https://i.turner.ncaa.com/dr/ncaa/ncaa7/release/sites/default/files/images/logos/schools/d/davidson.70.png",
+        "location": "Davidson, NC",
+        "nickname": "Wildcats",
+        "conference": "Atlantic 10 Conference",
+        "color": "#cc092f"
+    },
+    {
+        "team": "University at Buffalo",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/b/buffalo.70.png",
+        "location": "Buffalo, NY",
+        "nickname": "Bulls",
+        "conference": "Mid-American Conference",
+        "color": "#004179"
+    },
+    {
+        "team": "Loyola University Chicago",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/l/loyola-il.70.png",
+        "location": "Chicago, IL",
+        "nickname": "Ramblers",
+        "conference": "Missouri Valley Conference",
+        "color": "#eb9f00"
+    },
+    {
+        "team": "North Carolina State University",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/n/north-carolina-st.70.png",
+        "location": "Raleigh, NC",
+        "nickname": "Wolfpack",
+        "conference": "Atlantic Coast Conference",
+        "color": "#CC0000"
+    },
+    {
+        "team": "Wright State University",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/w/wright-st.70.png",
+        "location": "Dayton, OH",
+        "nickname": "Raiders",
+        "conference": "Horizon League",
+        "color": "#efad00"
+    },
+    {
+        "team": "University of Tennessee",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/t/tennessee.70.png",
+        "location": "Knoxville, TN",
+        "nickname": "Volunteers",
+        "conference": "Southeastern Conference",
+        "color": "#f77f00"
+    },
+    {
+        "team": "University of Texas",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/t/texas.70.png",
+        "location": "Austin, TX",
+        "nickname": "Longhorns",
+        "conference": "Big 12 Conference",
+        "color": "#CC5500"
+    },
+    {
+        "team": "Georgia State University",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/g/georgia-st.70.png",
+        "location": "Atlanta, GA",
+        "nickname": "Panthers",
+        "conference": "Sun Belt Conference",
+        "color": "#74a4cc"
+    },
+    {
+        "team": "Tennessee State University",
+        "icon": "https://i.turner.ncaa.com/dr/ncaa/ncaa7/release/sites/default/files/images/logos/schools/t/tennessee-st.70.png",
+        "location": "Nashville, TN",
+        "nickname": "Tigers",
+        "conference": "Ohio Valley Conference",
+        "color": "#003183"
+    },
+    {
+        "team": "University of Missouri",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/missouri.70.png",
+        "location": "Columbia, MO",
+        "nickname": "Tigers",
+        "conference": "Southeastern Conference",
+        "color": "#F1B82D"
+    },
+    {
+        "team": "The Ohio State University",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/o/ohio-st.70.png",
+        "location": "Columbus, OH",
+        "nickname": "Buckeyes",
+        "conference": "Big Ten Conference",
+        "color": "#990000"
+    },
+    {
+        "team": "UNC Greensboro",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/u/unc-greensboro.70.png",
+        "location": "Greensboro, NC",
+        "nickname": "Spartans",
+        "conference": "Southern Conference",
+        "color": "#003c79"
+    },
+    {
+        "team": "University of Houston",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/h/houston.70.png",
+        "location": "Houston, TX",
+        "nickname": "Cougars",
+        "conference": "American Athletic Conference",
+        "color": "#CC0000"
+    },
+    {
+        "team": "San Diego State University",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/s/san-diego-st.70.png",
+        "location": "San Diego, CA",
+        "nickname": "Aztecs",
+        "conference": "Mountain West Conference",
+        "color": "#A81933"
+    },
+    {
+        "team": "University of Montana",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/montana.70.png",
+        "location": "Missoula, MT",
+        "nickname": "Grizzlies",
+        "conference": "Big Sky Conference",
+        "color": "#8b2346"
+    },
+    {
+        "team": "Providence College",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/p/providence.70.png",
+        "location": "Providence, RI",
+        "nickname": "Friars",
+        "conference": "Big East Conference",
+        "color": "#141414"
+    },
+    {
+        "team": "Texas A&M University",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/t/texas-am.70.png",
+        "location": "College Station, TX",
+        "nickname": "Aggies",
+        "conference": "Southeastern Conference",
+        "color": "#500000"
+    },
+    {
+        "team": "Lipscomb University",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/l/lipscomb.70.png",
+        "location": "Nashville, TN",
+        "nickname": "Bisons",
+        "conference": "Atlantic Sun Conference",
+        "color": "#f4b53b"
+    },
+    {
+        "team": "Radford University",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/r/radford.70.png",
+        "location": "Radford, VA",
+        "nickname": "Highlanders",
+        "conference": "Big South Conference",
+        "color": "#e13a3e"
+    },
+    {
+        "team": "University of Alabama",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/a/alabama.70.png",
+        "location": "Tuscaloosa, AL",
+        "nickname": "Crimson Tide",
+        "conference": "Southeastern Conference",
+        "color": "#a32136"
+    },
+    {
+        "team": "Murray State University",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/murray-st.70.png",
+        "location": "Murray, KY",
+        "nickname": "Racers",
+        "conference": "Ohio Valley Conference",
+        "color": "#e4bb00"
+    },
+    {
+        "team": "Marshall University",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/m/marshall.70.png",
+        "location": "Huntington, WV",
+        "nickname": "Thundering Herd",
+        "conference": "Conference USA",
+        "color": "#11461b"
+    },
+    {
+        "team": "St. Bonaventure University",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/s/st-bonaventure.70.png",
+        "location": "St. Bonaventure, NY",
+        "nickname": "Bonnies",
+        "conference": "Atlantic 10 Conference",
+        "color": "#714432"
+    },
+    {
+        "team": "Texas Tech University",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/t/texas-tech.70.png",
+        "location": "Lubbock, TX",
+        "nickname": "Red Raiders",
+        "conference": "Big 12 Conference",
+        "color": "#CC0000"
+    },
+    {
+        "team": "Stephen F. Austin State University",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/s/stephen-f-austin.70.png",
+        "location": "Nacogdoches, TX",
+        "nickname": "Lumberjacks",
+        "conference": "Southland Conference",
+        "color": "#330066"
+    },
+    {
+        "team": "Cal State-Fullerton",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/c/cal-st-fullerton.70.png",
+        "location": "Fullerton, CA",
+        "nickname": "Titans",
+        "conference": "Big West Conference",
+        "color": "#003057"
+    },
+    {
+        "team": "University of Pennsylvania",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/p/penn.70.png",
+        "location": "Philadelphia, PA",
+        "nickname": "Quakers",
+        "conference": "The Ivy League",
+        "color": "#ae223e"
+    },
+    {
+        "team": "Clemson University",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/c/clemson.70.png",
+        "location": "Clemson, SC",
+        "nickname": "Tigers",
+        "conference": "Atlantic Coast Conference",
+        "color": "#F66733"
+    },
+    {
+        "team": "Auburn University",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/a/auburn.70.png",
+        "location": "Auburn, AL",
+        "nickname": "Tigers",
+        "conference": "Southeastern Conference",
+        "color": "#f58025"
+    },
+    {
+        "team": "College of Charleston",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/c/col-of-charleston.70.png",
+        "location": "Charleston, SC",
+        "nickname": "Cougars",
+        "conference": "Colonial Athletic Conference",
+        "color": "#772932"
+    },
+    {
+        "team": "Arizona State University",
+        "icon": "https://i.turner.ncaa.com/dr/ncaa/ncaa7/release/sites/default/files/images/logos/schools/a/arizona-st.70.png",
+        "location": "Tempe, AZ",
+        "nickname": "Sun Devils",
+        "conference": "Pac-12 Conference",
+        "color": "#8b2346"
+    },
+    {
+        "team": "Texas Christian University",
+        "icon": "https://i.turner.ncaa.com/dr/ncaa/ncaa7/release/sites/default/files/images/logos/schools/t/tcu.70.png",
+        "location": "Fort Worth, TX",
+        "nickname": "Horned Frogs",
+        "conference": "Big 12 Conference",
+        "color": "#34297a"
+    },
+    {
+        "team": "University of Oklahoma",
+        "icon": "https://i.turner.ncaa.com/sites/default/files/images/logos/schools/o/oklahoma.70.png",
+        "location": "Norman, OK",
+        "nickname": "Sooners",
+        "conference": "Big 12 Conference",
+        "color": "#B30838"
     }
 ]

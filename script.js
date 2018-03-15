@@ -42,9 +42,9 @@ var linq = (function () {
     var mode = function (array, order) {
         var items = {};
         var modeItem = array[0];
-        var max = 1;
+        var max = 0;
         array.forEach(function (item) {
-            if (items[item] == null)
+            if (!items[item])
                 items[item] = 1;
             else
                 items[item]++;
