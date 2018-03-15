@@ -61,6 +61,6 @@ body {
     color: #ffbd00;
 }
 
-.form-control {
+.form-control, .input-group {
     width: 200px;
 }
