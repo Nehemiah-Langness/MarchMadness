@@ -11,9 +11,13 @@ body {
 }     
 
 .content {
-    background: rgba(255, 255, 255, 0.8);
     padding-top: 1em;
     box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.8);
+}
+
+main {
+    background: rgba(255, 255, 255, 1);
+    height: 100%
 }
 
 .match-result {

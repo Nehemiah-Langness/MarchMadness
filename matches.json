@@ -4,138 +4,138 @@
     ],
     "q1": [
         {
-            "team1": "University of Virginia",
-            "team2": "UMBC"
+            "team1": "Gonzaga",
+            "team2": "Norfolk St."
         },
         {
-            "team1": "Creighton University",
-            "team2": "Kansas State University"
+            "team1": "Oklahoma",
+            "team2": "Missouri"
         },
         {
-            "team1": "University of Kentucky",
-            "team2": "Davidson College"
+            "team1": "Creighton",
+            "team2": "UCSB"
         },
         {
-            "team1": "University of Arizona",
-            "team2": "University at Buffalo"
+            "team1": "Virginia",
+            "team2": "Ohio"
         },
         {
-            "team1": "University of Miami",
-            "team2": "Loyola University Chicago"
+            "team1": "USC",
+            "team2": "Drake"
         },
         {
-            "team1": "University of Tennessee",
-            "team2": "Wright State University"
+            "team1": "Kansas",
+            "team2": "Eastern Wash."
         },
         {
-            "team1": "University of Nevada",
-            "team2": "University of Texas"
+            "team1": "Oregon",
+            "team2": "VCU"
         },
         {
-            "team1": "University of Cincinnati",
-            "team2": "Georgia State University"
+            "team1": "Iowa",
+            "team2": "Grand Canyon"
         }
     ],
     "q2": [        
         {
-            "team1": "Villanova University",
-            "team2": "Radford University"
+            "team1": "Michigan",
+            "team2": "Texas Southern"
         },
         {
-            "team1": "Virginia Tech",
-            "team2": "University of Alabama"
+            "team1": "LSU",
+            "team2": "St. Bonaventure"
         },
         {
-            "team1": "West Virginia University",
-            "team2": "Murray State University"
+            "team1": "Colorado",
+            "team2": "Georgetown"
         },
         {
-            "team1": "Wichita State University",
-            "team2": "Marshall University"
+            "team1": "Florida St.",
+            "team2": "UNC Greensboro"
         },
         {
-            "team1": "University of Florida",
-            "team2": "St. Bonaventure University"
+            "team1": "BYU",
+            "team2": "UCLA"
         },
         {
-            "team1": "Texas Tech University",
-            "team2": "Stephen F. Austin State University"
+            "team1": "Texas",
+            "team2": "Abilene Christian"
         },
         {
-            "team1": "University of Arkansas",
-            "team2": "Butler University"
+            "team1": "UConn",
+            "team2": "Maryland"
         },
         {
-            "team1": "Purdue University",
-            "team2": "Cal State-Fullerton"
+            "team1": "Alabama",
+            "team2": "Iona"
         }
     ],
     "q3": [
         {
-            "team1": "Xavier University",
-            "team2": "Tennessee State University"
+            "team1": "Baylor",
+            "team2": "Hartford"
         },
         {
-            "team1": "University of Missouri",
-            "team2": "Florida State University"
+            "team1": "North Carolina",
+            "team2": "Wisconsin"
         },
         {
-            "team1": "The Ohio State University",
-            "team2": "South Dakota State University"
+            "team1": "Villanova",
+            "team2": "Winthrop"
         },
         {
-            "team1": "Gonzaga University",
-            "team2": "UNC Greensboro"
+            "team1": "Purdue",
+            "team2": "North Texas"
         },
         {
-            "team1": "University of Houston",
-            "team2": "San Diego State University"
+            "team1": "Texas Tech",
+            "team2": "Utah St."
         },
         {
-            "team1": "University of Michigan",
-            "team2": "University of Montana"
+            "team1": "Arkansas",
+            "team2": "Colgate"
         },
         {
-            "team1": "Texas A&M University",
-            "team2": "Providence College"
+            "team1": "Florida",
+            "team2": "Virginia Tech"
         },
         {
-            "team1": "University of North Carolina",
-            "team2": "Lipscomb University"
+            "team1": "Ohio St.",
+            "team2": "Oral Roberts"
         }
     ],
     "q4": [
         {
-            "team1": "University of Kansas",
-            "team2": "University of Pennsylvania"
+            "team1": "Illinois",
+            "team2": "Drexel"
         },
         {
-            "team1": "Seton Hall University",
-            "team2": "North Carolina State University"
+            "team1": "Loyola Chicago",
+            "team2": "Georgia Tech"
         },
         {
-            "team1": "Clemson University",
-            "team2": "New Mexico State University"
+            "team1": "Tennessee",
+            "team2": "Oregon St."
         },
         {
-            "team1": "Auburn University",
-            "team2": "College of Charleston"
+            "team1": "Oklahoma St.",
+            "team2": "Liberty"
         },
         {
-            "team1": "Texas Christian University",
-            "team2": "Arizona State University"
+            "team1": "San Diego St.",
+            "team2": "Syracuse"
         },
         {
-            "team1": "Michigan State University",
-            "team2": "Bucknell University"
+            "team1": "West Virginia",
+            "team2": "Morehead St."
         },
         {
-            "team1": "University of Rhode Island",
-            "team2": "University of Oklahoma"
+            "team1": "Clemson",
+            "team2": "Rutgers"
         },
         {
-            "team1": "Duke University",
-            "team2": "Iona College"
+            "team1": "Houston",
+            "team2": "Cleveland St."
         }
     ]
 }

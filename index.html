@@ -8,103 +8,92 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>March Madness</title>
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-
-            <span class="h1 navbar-brand">
-                <i class="fas fa-gem"></i> Win the things!</span>
-
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                </ul>
-                <input class="form-control mr-sm-2" type="search" placeholder="Filter">
+    <main class="container">
+        <div class="content">
+            <div id="temp" class="text-center" style="display:none;">
+                <span class="h1">
+                    <i class="fas fa-spinner fa-spin"></i>
+                </span>
+                <br />
+                <span class="h3">
+                    Running analysis
+                </span>
             </div>
-        </div>
-    </nav>
-    <div class="navbar">
-        <span class="h1 navbar-brand">&nbsp;</span>
-    </div>
-    <div class="container content">
+            <div id="main-data">
 
-        <div id="temp" class="text-center" style="display:none;">
-            <span class="h1">
-                <i class="fas fa-spinner fa-spin"></i>
-            </span>
-            <br/>
-            <span class="h3">
-                Running analysis
-            </span>
-        </div>
-        <div id="main-data">
-
-        </div>
-        <div id="constraints" class="clearfix">
-            <span class="h1">
-                Analysis parameters
-            </span>
-            <hr>
-            <div class="form-group">
-                <label for="min-overall">Overall Minimum Chance</label>
-                <div class="input-group">
-                    <input id="min-overall" type="text" class="form-control" value="0.037" placeholder="%">
-                    <div class="input-group-append">
-                        <span class="input-group-text" id="basic-addon2">%</span>
-                    </div>
+            </div>
+            <div id="constraints" class="clearfix">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <span class="h1">
+                        Analysis parameters
+                    </span>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Filter">
                 </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="min-overall">Overall Minimum Chance</label>
+                            <div class="input-group">
+                                <input id="min-overall" type="text" class="form-control" value="0.037" placeholder="%">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">%</span>
+                                </div>
+                            </div>
 
-            </div>
-            <div class="form-group">
-                <label for="min-round">Round Minimum Chance</label>
-                <div class="input-group">
-                    <input id="min-round" type="text" class="form-control" value="15" placeholder="%">
-                    <div class="input-group-append">
-                        <span class="input-group-text" id="basic-addon2">%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="iterations">Total Iterations</label>
-                <div class="input-group">
-                    <input id="iterations" type="text" class="form-control" value="6000" placeholder="">
-                    <div class="input-group-append">
-                        <span class="input-group-text" id="basic-addon2">rounds</span>
-                    </div>
-                </div>
-            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="min-round">Round Minimum Chance</label>
+                            <div class="input-group">
+                                <input id="min-round" type="text" class="form-control" value="15" placeholder="%">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="iterations">Total Iterations</label>
+                            <div class="input-group">
+                                <input id="iterations" type="text" class="form-control" value="6000" placeholder="">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">rounds</span>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="form-group">
-                <label for="attempts">Attempts To Match Constraints</label>
-                <div class="input-group">
-                    <input id="attempts" type="text" class="form-control" value="50" placeholder="">
-                    <div class="input-group-append">
-                        <span class="input-group-text" id="basic-addon2">tries</span>
+                        <div class="form-group">
+                            <label for="attempts">Attempts To Match Constraints</label>
+                            <div class="input-group">
+                                <input id="attempts" type="text" class="form-control" value="50" placeholder="">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">tries</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <button id="run" type="button" class="btn btn-block align-self-stretch btn-success">Run Analysis</button>
                     </div>
                 </div>
             </div>
-
-            <button id="run" type="button" class="btn btn-outline-dark">Run Analysis</button>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous">
-        </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous">
-        </script>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script src="analysis.js"></script>
     <script src="htmlHelper.js"></script>
@@ -158,7 +147,7 @@
                                     var test = analysis.condense(iterations);
                                     if (test.roundMin > mostLikely.roundMin && test.overallChance > mostLikely.overallChance)
                                         mostLikely = test;
-                                    tries++;                                    
+                                    tries++;
                                 }
 
                                 $("#temp").hide();
@@ -170,10 +159,6 @@
                     }
                 });
             });
-
-
-
-
         });
     </script>
 </body>

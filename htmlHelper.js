@@ -2,7 +2,7 @@ var htmlHelper = (function() {
     var runningLikelyhood;
 
     var getTeam = function (teams, matchTeam){
-        var match = teams.find(function (team) { return team.team == matchTeam.team; });
+        var match = teams.find(function (team) { return team.team == matchTeam.team || team.team == matchTeam.nickname; });
 
         if (!match) 
             return matchTeam
